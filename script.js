@@ -59,5 +59,42 @@ const transactions = [150, 200, -50, 400];
 const foundTransactions = transactions.find((x) => x < 0);
 console.log(foundTransactions);
 
-// ------------- 10
+// *****************
+// ADDITIONAL ASSIGNMENTS
+// ------------- 10 - 2
+
+const emails = ["user@gmail.com", "admin@yahoo.com", "test@gmail.com", "hello@outlook.com"];
+const onlyGmails = emails.filter(eml => eml.includes("@gmail.com"))
+console.log(onlyGmails)
+
+// ------------- 11 - 2
+
+const team = ["Ana", "Giorgi", "Nino", "Davit"];
+console.log(team.join(" | "))
+
+// ------------- 12 - 2
+
+// const products = ["laptop", "phone", "tablet", "monitor"];
+// const upperCaseProducts = products.map(item => item.toUpperCase())
+// console.log(upperCaseProducts)
+
+// -------------- 13 - 2
+
+const scores = [67, 92, 45, 88, 73, 99, 56];
+const maxScore = scores.reduce((max, score) => score > max ? score : max, 0)
+console.log(maxScore)
+
+// -------------- 14 - 2
+
+const cart = [
+  { name: "Bread", price: 3.5 },
+  { name: "Milk", price: 2.8 },
+  { name: "Cheese", price: 7.2 },
+  { name: "Eggs", price: 4.0 }
+];
+const productsTotal = cart.reduce((total, item) => total + item.price, 0)
+console.log(productsTotal)
+
+
+// *****************
 
